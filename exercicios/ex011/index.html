@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagem_P_300x300.jpg" type="image/jpg"/>
+        <source media="(max-width: 1050px)" srcset="imagens/imagem_M_750x750.jpg" type="image/jpg"/>
+        <img src="imagens/imagem_G_1000x1000.jpg" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" autoplay controls> <!--'preload' parametro que fala se o video vai carregar (auto)durante a abertura do site (enquanto não carregar o site não abre), (metadata)antes da abertura do site ou (none)não vai carregar sem que aperte para carregar-->
+        <source src="midia/Absolutely Cool(MP3_128K).mp3" type="audio/mpeg">
+        <source src="midia/Absolutely Cool(MP3_128K).ogg" type="audio/ogg"> <!--extensão alternativa caso o browser não reconheça mp3-->
+        <source src="midia/Absolutely Cool(MP3_128K).wav" type="audio/wav"> <!--extensão alternativa caso as 2 primeiras não seje reconhecida-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Absolutely Cool(MP3_128K).mp3">Clique aqui para baixar o arquivo</a></p>
+    </audio>
+
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video controls width="700px">
+        <source src="video/smoke.mp4" type="video/mp4">
+        <source src="video/smoke.mwebm" type="video/webm">
+        <source src="video/smoke.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video> <!--é indicado colocar vários formatos para browsers diferentes-->
+    
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2iaPuUFIyMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

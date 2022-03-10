@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        *{ /*Configuração global da CSS (estendo o degrade por toda página*/
+            height: 100%;
+        }
+        body {
+            background-image: linear-gradient(to bottom, white, blue); /*este parametro 'linear-gradiente' é configurado por 1° a direção, depois a 1° cor e depois a segunda cor, obs.: pode ser inserido quantas cores quiser e pode colocar a porcentagem depois da cor*/
+            background-attachment: fixed;/*deixa o degrade fixo e não rolando com a barra de rolagem*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+</body>
+</html>

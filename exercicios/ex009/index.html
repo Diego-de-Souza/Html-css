@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2>
+        <ol type="a"> <!--o comando 'start=' faz sua lista começar a partir do ponto que colocou no parametro-->
+            <!--em start, o paramentro '1' enumera a lista, o parametro 'a' enumera com alfabeto minusculo, 'A' alfabeto maisculo, 'i' numeros romanos pequeno, 'I' numeros romanos maiusculo -->
+            <li>Acordar</li> <!--Obs. o /li é opcional em HTML 5-->
+            <li>Ligar para o João</li>
+            <li>Tomar café</li>
+            <li>Escovar os dentes</li>
+            <li>Ir para faculdade</li>
+            <li>Almoçar</li>
+            <li>Ir para o trabalho</li>
+            <li>Voltar para casa</li>
+            <li>Jantar</li>
+            <li>Dormir</li>
+        </ol>
+    <h2>Listas não ordenadas</h2>
+        <ul type="square"> <!--neste tipo de listas temos os padrões 'disc', 'circle', 'square' -->
+            <li>pao</li>
+            <li>leite</li>
+            <li>manteiga</li>
+            <li>alface</li>
+            <li>arroz</li>
+            <li>tomate</li>
+            <li>feijão</li>
+        </ul>
+    <h2>Minhas linguas favoritas</h2>
+        <ol>
+            <li>Antigas</li>
+                <ol type="a">
+                    <li>Cliper</li>
+                    <li>Visual Basic</li>
+                    <li>Fortran</li>
+                    <li>Delphi</li>
+                </ol>
+            <li>Novas</li>
+                <ol type="a" start="5">
+                    <li>PHP</li>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>Kotlin</li>
+                </ol>
+        </ol>
+    <h2>Meus jogos favoritos</h2>
+        <ol>
+            <li>NES</li>
+            <ul type="circle">
+                <li>Mario Bros</li>
+                <li>Ninja gaiden</li>
+            </ul>
+            <li>SNES</li>
+            <ul type="square">
+                <li>Mario</li>
+                <li>Donkey kong</li>
+            </ul>
+            <li>Play station</li>
+            <ul type="disc">
+                <li>Final fantasy</li>
+                <li>Castlevania</li>
+            </ul>
+        </ol>
+    <h2>Lista de definições</h2>
+        <dl>
+            <dt>HTML</dt> <!--Termo-->
+            <dd>Linguagem de marcação para criação do conteudo de um site.</dd> <!--definição-->
+            <dt>CSS</dt>
+            <dd>Linguagem de marcação para a criação do design de um site.</dd>
+            <dt>JavaScript</dt>
+            <dd>Linguagem de programação para criação de interatividade de um site.</dd>
+        </dl>
+</body>
+</html>
