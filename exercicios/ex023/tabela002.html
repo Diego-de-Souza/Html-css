@@ -29,6 +29,11 @@
             background-color: gray;
             color: white;
         }
+
+        tbody > tr:nth-child(2n) { /*para o parametro nth-child temos além de 2n - odd(celulas impar) e even (celulas par), se for inserido 2n-1 é igual odd*/
+            background-color: lightgray;
+        }
+
         td.num {
             text-align: right;
         }
